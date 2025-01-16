@@ -1,0 +1,53 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Ảnh đại diện sinh viên -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:src="@drawable/viquocthuan" />
+
+    <!-- Thông tin sinh viên -->
+    <TextView
+        android:id="@+id/textViewInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Họ tên: Vi Quốc Thuận\nMSSV: 22110006"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+    <!-- Nhập mảng -->
+    <EditText
+        android:id="@+id/editTextArray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Nhập mảng (cách nhau bằng dấu phẩy)" />
+
+    <!-- Nút xử lý mảng -->
+    <Button
+        android:id="@+id/buttonProcessArray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:text="Xử lý mảng" />
+
+    <!-- Kết quả -->
+    <TextView
+        android:id="@+id/textViewArrayResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:textSize="16sp" />
+
+</LinearLayout>
